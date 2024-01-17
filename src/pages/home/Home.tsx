@@ -1,12 +1,13 @@
+
 function Home() {
 
     return (
         <>
-            <div id="container" className="
+            <div  className="
             bg-indigo-900 
             flex 
             justify-center">
-                <div id="subcontainer" className="
+                <div  className="
                 container 
                 grid 
                 grid-cols-2 
@@ -27,15 +28,13 @@ function Home() {
                         flex 
                         justify-around 
                         gap-4">
-                            <div className="
+                            <button className="
                             rounded 
-                            text-white 
-                            border-white 
-                            border-solid 
-                            border-2 
-                            px-4 
-                            py-2">Nova Postagem
-                            </div>
+                            bg-white 
+                            text-blue-800 
+                            py-2 
+                            px-4">Nova Postagem
+                            </button>
                         </div>
                     </div>
 
@@ -45,6 +44,9 @@ function Home() {
                             alt="Imagem da Página Home"
                             className="w-2/3"
                         />
+                    </div>
+                    <div>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit dignissimos reiciendis dolores maiores corrupti sunt delectus pariatur quaerat optio, odio, laborum facilis. Culpa, assumenda qui eaque magnam aspernatur vero? Vero.
                     </div>
                 </div>
             </div>
