@@ -1,9 +1,9 @@
-﻿import { useState, useContext, useEffect } from "react";
+﻿import { useContext, useEffect, useState } from "react";
+import { RotatingLines } from "react-loader-spinner";
 import { useNavigate, useParams } from "react-router-dom";
 import { AuthContext } from "../../../contexts/AuthContext";
 import Tema from "../../../models/Tema";
 import { buscar, deletar } from "../../../services/Service";
-import { RotatingLines } from "react-loader-spinner";
 
 function DeletarTema() {
 
@@ -90,18 +90,18 @@ function DeletarTema() {
                     <button
                         className='w-full text-slate-100 bg-indigo-400 
                                    hover:bg-indigo-600 flex items-center justify-center'
-                                   onClick={deletarTema}>
-                         {isLoading ?
-                        <RotatingLines
-                            strokeColor="white"
-                            strokeWidth="5"
-                            animationDuration="0.75"
-                            width="24"
-                            visible={true}
-                        /> :
-                        <span>Sim</span>
-                        
-                    }
+                        onClick={deletarTema}>
+                        {isLoading ?
+                            <RotatingLines
+                                strokeColor="white"
+                                strokeWidth="5"
+                                animationDuration="0.75"
+                                width="24"
+                                visible={true}
+                            /> :
+                            <span>Sim</span>
+
+                        }
                     </button>
                 </div>
             </div>
